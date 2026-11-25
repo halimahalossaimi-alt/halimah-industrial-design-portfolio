@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Industrial design portfolio by Halimah Alossaimi.">
+  <title>Halimah Alossaimi — Interactive Design Portfolio</title>
+  <link rel="stylesheet" href="styles.css?v=particle-sphere-2">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="index.html">Halimah Alossaimi</a>
+    <nav aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="album-cover.html">On My Way</a>
+      <a href="dog-park.html">Future Indoor Dog Park</a>
+      <a href="dog-park.html">Industrial Design</a>
+      <a href="dog-park.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero shell">
+      <div class="particle-sphere" aria-hidden="true">
+        <canvas id="hero-particle-sphere"></canvas>
+      </div>
+      <p class="eyebrow">Industrial Design · ASU · 2026</p>
+      <h1>Industrial Design Portfolio.</h1>
+      <p class="hero-copy">Halimah Alossaimi</p>
+    </section>
+
+    <section class="flower-section shell" aria-labelledby="flower-title">
+      <div class="section-heading compact-heading">
+        <div>
+          <p class="eyebrow">Interactive artwork</p>
+          <h2 id="flower-title">Explore my design process</h2>
+        </div>
+        <p class="instruction">Click or tap to explore the process.</p>
+      </div>
+      <div id="flower-field" class="flower-field" role="application" tabindex="0" aria-label="Interactive drawing area. Click, tap, or press Enter to plant a tree.">
+        <div class="field-note" aria-hidden="true">Explore the work below</div>
+      </div>
+    </section>
+
+    <section id="work" class="work-section shell" aria-labelledby="work-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Portfolio</p>
+          <h2 id="work-title">Selected industrial design work</h2>
+        </div>
+      </div>
+      <div class="project-grid">
+        <a class="project-card" href="album-cover.html">
+          <figure class="project-image square">
+            <img src="https://halimahalossaimi-alt.github.io/halimah-interactive-portfolio/assets/on-my-way-final.webp" alt="On My Way album cover with a pink sunset, dashboard, and white title lettering.">
+          </figure>
+          <div class="project-meta">
+            <div>
+              <p class="project-type">Album cover · 2026</p>
+              <h3>On My Way</h3>
+            </div>
+            <span aria-hidden="true">↗</span>
+          </div>
+        </a>
+
+        <a class="project-card" href="dog-park.html">
+          <figure class="project-image landscape">
+            <img src="https://halimahalossaimi-alt.github.io/halimah-interactive-portfolio/assets/dogpark-final-wide.webp" alt="Blender render of the indoor dog park with a central pond, dogs, planting, and seating.">
+          </figure>
+          <div class="project-meta">
+            <div>
+              <p class="project-type">3D environment · 2026</p>
+              <h3>Future Indoor Dog Park</h3>
+            </div>
+            <span aria-hidden="true">↗</span>
+          </div>
+        </a>
+
+        <a class="project-card proposal-card" href="dog-park.html">
+          <div class="project-image proposal-preview street-preview" aria-hidden="true">
+            <span class="preview-kicker">LOOP 02 · ROLE: ZOMBIE</span>
+            <span class="street-preview-sun"></span>
+            <span class="street-preview-house"></span>
+            <span class="street-preview-runner">●</span>
+            <span class="street-preview-zombie">●</span>
+            <span class="preview-question">Same street. Different fear.</span>
+          </div>
+          <div class="project-meta">
+            <div>
+              <p class="project-type">Interactive design · 2026</p>
+              <h3>Interactive design</h3>
+            </div>
+            <span aria-hidden="true">↗</span>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer shell">
+    <p>Halimah Alossaimi · Industrial Designer</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+  <script src="flowers.js?v=forest4"></script>
+  <script src="particle-sphere.js?v=2"></script>
+  <script src="site-motion.js"></script>
+</body>
+</html>
