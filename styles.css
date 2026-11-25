@@ -914,3 +914,14 @@ figcaption { color: var(--muted); font-family:"Courier New",monospace; text-tran
     transition: none;
   }
 }
+
+
+/* About section */
+.about-section { padding: 0 0 clamp(100px, 12vw, 170px); }
+.about-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(48px, 9vw, 140px); align-items: start; }
+.about-lede p { margin: 0; max-width: 560px; color: #68459b; font-size: clamp(1.7rem, 3.5vw, 3.2rem); line-height: 1.05; letter-spacing: -.04em; }
+.about-grid .body-copy p { max-width: 650px; }
+@media (max-width: 780px) {
+  .about-grid { grid-template-columns: 1fr; gap: 24px; }
+  .about-lede p { font-size: 2rem; }
+}
