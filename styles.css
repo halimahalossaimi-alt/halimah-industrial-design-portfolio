@@ -940,7 +940,7 @@ figcaption { color: var(--muted); font-family:"Courier New",monospace; text-tran
   inset: 9%;
   z-index: 0;
   pointer-events: none;
-  background: url("https://blush.design/api/download?shareUri=2CC873ZoWCpGukho&c=New%2520Palette%25201_0%7Effffff&w=800&h=800&fm=png") center / contain no-repeat;
+  background: url("hero-illustration.png") center / contain no-repeat;
   opacity: .34;
   mix-blend-mode: multiply;
 }
