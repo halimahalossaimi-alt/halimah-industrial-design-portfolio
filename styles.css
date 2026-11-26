@@ -83,7 +83,7 @@ h1, h2, h3 { margin: 0; letter-spacing: -0.045em; line-height: 0.98; }
 .project-image { overflow: hidden; border-radius: 22px; background: var(--panel); }
 .project-image.square { aspect-ratio: 1; }
 .project-image.landscape { aspect-ratio: 1; }
-.project-image img { height: 100%; object-fit: cover; transition: transform .5s ease; }
+.project-image img { height: 100%; object-fit: contain; transition: transform .5s ease; }
 .project-image.landscape img { object-position: center; }
 .project-card:hover .project-image img { transform: scale(1.025); }
 .project-meta { display: flex; justify-content: space-between; align-items: end; padding-top: 18px; }
@@ -1022,7 +1022,7 @@ figcaption { color: var(--muted); font-family:"Courier New",monospace; text-tran
 .about-signature { margin:0; font:600 .72rem/1 "IBM Plex Mono", monospace; letter-spacing:.12em; opacity:.7; }
 .about-section .about-grid { grid-template-columns:minmax(280px,.8fr) minmax(0,1.2fr); gap:clamp(48px,8vw,130px); }
 .about-image-wrap { position:relative; width:min(100%,430px); margin-bottom:34px; }
-.about-headshot { width:100%; max-width:none; margin:0; border-radius:32px; box-shadow:18px 18px 0 #d4ff4f; }
+.about-headshot { width:100%; max-width:none; margin:0; border-radius:32px; box-shadow:18px 18px 0 #d4ff4f; object-fit:contain; aspect-ratio:auto; background:#f4f4f4; }
 .about-image-label { position:absolute; right:-14px; bottom:22px; padding:10px 14px; background:#10120f; color:#d4ff4f; font:600 .72rem/1 "IBM Plex Mono",monospace; letter-spacing:.08em; text-transform:uppercase; }
 .about-lede > p { max-width:430px; font-size:clamp(1.45rem,2.7vw,2.5rem); color:#10120f; }
 .about-copy { padding:clamp(24px,4vw,52px); border:1px solid rgba(16,18,15,.45); background:rgba(255,255,255,.2); }
