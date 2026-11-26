@@ -6,7 +6,11 @@
   <meta name="description" content="Ferō rolling cargo trailer design process by Halimah Alossaimi.">
   <title>Ferō — Rolling Cargo Trailer | Halimah Alossaimi</title>
   <link rel="stylesheet" href="styles.css?v=fero-1">
-</head>
+<style>
+.fero-page .fero-hero{display:grid;grid-template-columns:1fr 1fr;gap:1rem 4vw;align-items:center;min-height:0;padding-block:clamp(3rem,6vw,6rem)}
+.fero-hero>.eyebrow,.fero-hero>h1,.fero-page .fero-lead{grid-column:1;margin:0;text-align:left}.fero-page .fero-hero h1{font-size:clamp(5rem,11vw,10rem);text-transform:none}.fero-page .fero-hero-card{grid-column:2;grid-row:1/4;margin:0;width:100%;box-sizing:border-box}.fero-page .fero-section h2{font-size:clamp(2rem,4.5vw,4.5rem);text-transform:none;line-height:1.04;max-width:22ch}.fero-page .fero-section p:not(.eyebrow){max-width:62ch;line-height:1.5}
+@media(max-width:760px){.fero-page .fero-hero{display:flex;flex-direction:column;align-items:stretch}.fero-page .fero-hero-card{margin-top:1rem}}
+</style></head>
 <body class="fero-page">
   <header class="site-header">
     <a class="wordmark" href="index.html">Halimah Alossaimi</a>
@@ -22,8 +26,8 @@
   <main>
     <section class="fero-hero shell">
       <p class="eyebrow">Industrial design · Product development · 2026</p>
-      <h1>Ferō<span>—</span><br>rolling cargo.</h1>
-      <p class="fero-lead">A compact cargo trailer designed around the reality of scooter commuting: carrying more, staying balanced, and making everyday movement feel easier.</p>
+      <h1>Ferō</h1>
+      <p class="fero-lead">A two-wheel cargo trailer for the ride to studio. I designed Ferō to carry a laptop, books, and models behind a scooter, then roll indoors by hand.</p>
       <div class="fero-hero-card">
         <div class="fero-silhouette" aria-hidden="true"><span></span><i></i><b></b></div>
         <div><p class="eyebrow">Project snapshot</p><p><strong>700 × 340 × 300 mm</strong><br>Two-wheel rolling cargo trailer · 3D-printable exterior · modular scooter connection</p></div>
@@ -31,39 +35,39 @@
     </section>
 
     <nav class="fero-index shell" aria-label="Ferō process sections">
-      <a href="#brief">01 Brief</a><a href="#research">02 Research</a><a href="#direction">03 Direction</a><a href="#development">04 Development</a><a href="#system">05 System</a><a href="#reflection">06 Reflection</a>
+      <a href="#brief">01 Brief</a><a href="#research">02 Criteria</a><a href="#direction">03 Direction</a><a href="#development">04 Development</a><a href="#system">05 System</a><a href="#reflection">06 Reflection</a>
     </nav>
 
     <section id="brief" class="fero-section shell">
-      <div class="fero-number">01</div><div><p class="eyebrow">The brief</p><h2>Make the commute carry more.</h2></div>
-      <div class="fero-two"><div><p>Ferō began with a simple problem: a scooter is convenient for short trips, but the rider has very little space for a laptop, books, a water bottle, or a small model. The trailer needed to extend that usefulness without becoming heavy, awkward, or difficult to detach.</p><p>The goal was a buildable concept that could be demonstrated at studio scale and developed into a functional product direction.</p></div><ul class="fero-list"><li><b>Use</b> books, laptop, small models, and daily essentials</li><li><b>Context</b> scooter commute and walk mode</li><li><b>Priority</b> balance, quick access, protection, and clear operation</li><li><b>Build</b> lightweight chassis with 3D-printable exterior panels</li></ul></div>
+      <div class="fero-number">01</div><div><p class="eyebrow">The brief</p><h2>Where does a model go on a scooter?</h2></div>
+      <div class="fero-two"><div><p>My scooter gets me to studio, but packing for the ride is another matter. A laptop fits in a backpack. A studio model needs its own space.</p><p>I wanted the same container to work all the way to my desk. That made detaching, pulling, and opening the trailer just as important as towing it.</p></div><ul class="fero-list"><li><b>Use</b> books, laptop, small models, and daily essentials</li><li><b>Context</b> scooter commute and walk mode</li><li><b>Priority</b> balance, quick access, protection, and clear operation</li><li><b>Build</b> lightweight chassis with 3D-printable exterior panels</li></ul></div>
     </section>
 
     <section id="research" class="fero-section fero-dark">
-      <div class="shell"><div class="fero-number">02</div><div><p class="eyebrow">Research &amp; insights</p><h2>Start with movement, storage, and trust.</h2></div>
-      <div class="fero-insight-grid"><article><span>01</span><h3>Hands stay free</h3><p>A rider should not have to carry a bag while steering, braking, or walking the scooter.</p></article><article><span>02</span><h3>Access should be quick</h3><p>The opening needs to work during a short stop, while keeping contents protected during movement.</p></article><article><span>03</span><h3>The connection must feel secure</h3><p>A universal hitch, positive lock, and secondary retention make the trailer feel dependable.</p></article></div></div>
+      <div class="shell"><div class="fero-number">02</div><div><p class="eyebrow">Design criteria</p><h2>What does the rider need at each stop?</h2></div>
+      <div class="fero-insight-grid"><article><span>01</span><h3>Hands stay free</h3><p>A rider should not have to carry a bag while steering, braking, or walking the scooter.</p></article><article><span>02</span><h3>Access should be quick</h3><p>The opening needs to work during a short stop, while keeping contents protected during movement.</p></article><article><span>03</span><h3>The connection must feel secure</h3><p>The rider needs to know when the hitch is locked. I specified a click-in coupler with a separate backup attachment.</p></article></div></div>
     </section>
 
     <section id="direction" class="fero-section shell">
-      <div class="fero-number">03</div><div><p class="eyebrow">Design direction</p><h2>One object, three modes.</h2></div>
-      <div class="fero-mode-grid"><article><span>01 / Commute</span><h3>Closed and protected</h3><p>A streamlined shell keeps the load contained while the rider moves through the city.</p></article><article><span>02 / Access</span><h3>Slide open</h3><p>A side sliding roll-top opens the cargo area without requiring a large lid swing or extra clearance.</p></article><article><span>03 / Workstation</span><h3>Open and useful</h3><p>The sliding cover and removable panel turn the trailer into a temporary tabletop for a laptop or studio tools.</p></article></div>
+      <div class="fero-number">03</div><div><p class="eyebrow">Design direction</p><h2>Ride, unpack, set up.</h2></div>
+      <div class="fero-mode-grid"><article><span>01 / Commute</span><h3>Closed and protected</h3><p>A streamlined shell keeps the load contained while the rider moves through the city.</p></article><article><span>02 / Access</span><h3>Slide open</h3><p>A side sliding roll-top opens the cargo area without requiring a large lid swing or extra clearance.</p></article><article><span>03 / Workstation</span><h3>Make a work surface</h3><p>The sliding cover and removable panel turn the trailer into a temporary tabletop for a laptop or studio tools.</p></article></div>
       <div class="fero-specs"><div><b>700 mm</b><span>overall length</span></div><div><b>340 mm</b><span>overall width</span></div><div><b>300 mm</b><span>overall height</span></div><div><b>85 mm</b><span>ground clearance</span></div></div>
     </section>
 
     <section id="development" class="fero-section fero-paper">
-      <div class="shell"><div class="fero-number">04</div><div><p class="eyebrow">Form development</p><h2>Refine the shape around the use.</h2></div>
-      <div class="fero-process"><article><span>01</span><h3>Hinged lid</h3><p>The first direction gave a familiar opening, but the lid required clearance behind the trailer and made the workstation idea less natural.</p></article><article><span>02</span><h3>Two-panel lid</h3><p>A folding option improved access, but added parts and visual noise.</p></article><article class="is-selected"><span>03</span><h3>Sliding roll-top</h3><p>The final direction keeps the opening compact, protects the load, and supports the tabletop use case.</p></article></div>
-      <div class="fero-development-note"><b>Key revision</b><p>The exterior was shortened and the front and rear curves were matched into one clearer silhouette. The black upper shell pulls inward while the orange lower body continues across the full width.</p></div></div>
+      <div class="shell"><div class="fero-number">04</div><div><p class="eyebrow">Form development</p><h2>Why I chose a sliding lid</h2></div>
+      <div class="fero-process"><article><span>01</span><h3>Hinged lid</h3><p>My first lid swung up on a rear hinge. Opening it meant leaving space behind the trailer every time I parked.</p></article><article><span>02</span><h3>Two-panel lid</h3><p>Splitting the lid let me fold it back in sections, but introduced another joint across the top.</p></article><article class="is-selected"><span>03</span><h3>Sliding roll-top</h3><p>I chose slats that slide sideways in a guide. I can reach inside without swinging a panel into the space where I’m standing.</p></article></div>
+      <div class="fero-development-note"><b>Key revision</b><p>I shortened the body from 870 to 700 mm and gave the nose and tail a similar curve. The black upper shell pulls inward while the orange lower body continues across the full width.</p></div></div>
     </section>
 
     <section id="system" class="fero-section shell">
-      <div class="fero-number">05</div><div><p class="eyebrow">Product system</p><h2>Details that make the concept credible.</h2></div>
-      <div class="fero-system-grid"><article><h3>Connection</h3><p>Universal scooter mounting with an articulated hitch for pitch, yaw, and roll. A one-click positive lock is paired with a secondary safety retention.</p></article><article><h3>Storage</h3><p>Charcoal fitted padding protects the lower body. Removable dividers organize different loads without protruding into the cargo space.</p></article><article><h3>Access</h3><p>Top guide only, flush slats, low-profile side grip, and a small cable pass-through gap for charging or workstation use.</p></article><article><h3>Walk mode</h3><p>A telescoping handle, side handle, and kickstands at both ends help the trailer stand upright when detached.</p></article><article><h3>Safety &amp; visibility</h3><p>Rear brake lights, interior lights, anti-slip lines, and four net anchors per side support safer daily use.</p></article><article><h3>Build strategy</h3><p>Separate printable exterior panels, a lightweight structural chassis, moving wheels, and a full-scale and small-scale version for testing.</p></article></div>
+      <div class="fero-number">05</div><div><p class="eyebrow">Product system</p><h2>How the parts work together</h2></div>
+      <div class="fero-system-grid"><article><h3>Connection</h3><p>The hitch is designed to pivot as the scooter turns, leans, or crosses uneven ground. A quick-release coupler lets the rider detach the trailer.</p></article><article><h3>Storage</h3><p>Charcoal fitted padding protects the lower body. Removable dividers organize different loads without protruding into the cargo space.</p></article><article><h3>Access</h3><p>The slats run in a top guide. I left a small gap for a laptop cable so the cover can stay in place while I work.</p></article><article><h3>Walk mode</h3><p>A telescoping handle, side handle, and kickstands at both ends help the trailer stand upright when detached.</p></article><article><h3>Safety &amp; visibility</h3><p>Rear brake lights, interior lights, anti-slip lines, and four net anchors per side support safer daily use.</p></article><article><h3>Build strategy</h3><p>Separate printable exterior panels, a lightweight structural chassis, moving wheels, and a full-scale and small-scale version for testing.</p></article></div>
     </section>
 
     <section id="reflection" class="fero-section fero-dark fero-reflection">
-      <div class="shell"><div class="fero-number">06</div><div><p class="eyebrow">Reflection</p><h2>Designing for the moment after the idea.</h2></div>
-      <p class="fero-reflection-text">Ferō became stronger when the design process moved beyond the trailer silhouette and asked how the object would be connected, opened, carried, stored, printed, and used away from the scooter. The final direction balances a simple visual language with the practical details that make a product feel ready for the next prototype.</p>
+      <div class="shell"><div class="fero-number">06</div><div><p class="eyebrow">Reflection</p><h2>The ride is only half the project.</h2></div>
+      <p class="fero-reflection-text">The lid changed the way I thought about Ferō. Once I pictured parking beside it and taking out a laptop, the space around the trailer mattered as much as the space inside. My next test would be to load a model, pull the trailer through a doorway, and unpack it without shifting the rest of the load.</p>
       <div class="fero-next"><a href="index.html#contact">Discuss the project ↗</a><a href="index.html">Back to portfolio ↗</a></div></div>
     </section>
   </main>
