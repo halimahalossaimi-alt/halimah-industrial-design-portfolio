@@ -940,7 +940,7 @@ figcaption { color: var(--muted); font-family:"Courier New",monospace; text-tran
   inset: 9%;
   z-index: 0;
   pointer-events: none;
-  background: url("hero-illustration.png") center / contain no-repeat;
+  background: url("hero-illustration.png?v=profile-simple") center / contain no-repeat;
   opacity: .34;
   mix-blend-mode: multiply;
 }
