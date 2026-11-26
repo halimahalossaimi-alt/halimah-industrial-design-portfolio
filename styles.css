@@ -948,3 +948,68 @@ figcaption { color: var(--muted); font-family:"Courier New",monospace; text-tran
   position: relative;
   z-index: 1;
 }
+
+
+/* Interactive education timeline */
+.education-section { padding: 112px 0; }
+.education-section .section-heading { align-items: end; }
+.section-note { max-width: 230px; color: var(--muted); font-size: .95rem; }
+.education-timeline {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+  margin-top: 72px;
+  padding-top: 3px;
+}
+.education-timeline::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 3%;
+  right: 3%;
+  height: 3px;
+  background: var(--ink);
+  opacity: .75;
+}
+.education-item { position: relative; z-index: 1; min-width: 0; }
+.education-node {
+  width: 100%;
+  min-height: 58px;
+  padding: 12px 10px;
+  border: 0;
+  border-radius: 16px;
+  background: var(--panel);
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+  box-shadow: 0 0 0 6px var(--paper);
+  transition: transform .2s ease, background .2s ease, color .2s ease;
+}
+.education-node:hover, .education-node:focus-visible { transform: translateY(-4px); outline: 3px solid var(--yellow); outline-offset: 3px; }
+.education-item.is-active .education-node { background: var(--ink); color: var(--paper); transform: translateY(-5px); }
+.education-year { display: block; font: 700 1.35rem/1 "Avenir Next", Avenir, sans-serif; }
+.education-degree { display: block; margin-top: 7px; font-size: .82rem; line-height: 1.18; }
+.education-detail {
+  margin-top: 22px;
+  padding: 18px;
+  min-height: 145px;
+  border-left: 3px solid var(--yellow);
+  background: color-mix(in srgb, var(--panel) 72%, transparent);
+  animation: education-reveal .25s ease both;
+}
+.education-detail p { margin: 0; color: var(--muted); font-size: .92rem; }
+.education-detail .education-focus { margin-bottom: 9px; color: var(--ink); font-weight: 700; }
+@keyframes education-reveal { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 900px) {
+  .education-timeline { grid-template-columns: 1fr; gap: 18px; margin-top: 42px; padding-left: 24px; }
+  .education-timeline::before { top: 0; bottom: 0; left: 7px; right: auto; width: 3px; height: auto; }
+  .education-item { padding-left: 16px; }
+  .education-node { box-shadow: 0 0 0 5px var(--paper); }
+  .education-detail { min-height: 0; margin-top: 12px; }
+}
+@media (max-width: 780px) {
+  .education-section { padding: 80px 0; }
+  .education-section .section-heading { display: block; }
+  .section-note { margin-top: 12px; }
+}
