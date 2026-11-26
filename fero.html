@@ -22,7 +22,8 @@
 .fero-page .fero-reflection-text{margin:0;font-size:clamp(1.1rem,1.6vw,1.45rem)}
 .fero-page .fero-hero-card{grid-template-columns:1fr;gap:1rem;padding:clamp(1rem,2vw,2rem)}
 @media(max-width:780px){.fero-page .fero-section>.shell{display:block}.fero-page .fero-section h2{max-width:100%}}
-</style></head>
+</style><script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@4.1.0/dist/model-viewer.min.js"></script>
+</head>
 <body class="fero-page">
   <header class="site-header">
     <a class="wordmark" href="index.html">Halimah Alossaimi</a>
@@ -41,7 +42,8 @@
       <h1>Ferō</h1>
       <p class="fero-lead">I designed Ferō to make it easier for students to carry more on their daily scooter commute. The two-wheel trailer carries books, a laptop, and other gear behind the scooter. When the ride ends, students can detach it and roll everything inside.</p>
       <div class="fero-hero-card">
-        <div class="fero-silhouette" aria-hidden="true"><span></span><i></i><b></b></div>
+        <model-viewer id="fero-3d" src="assets/fero-final.glb" alt="Ferō scooter cargo trailer in its closed riding configuration" camera-controls touch-action="pan-y" shadow-intensity="0.7" camera-orbit="35deg 70deg auto" style="display:block;width:100%;height:clamp(250px,32vw,440px);background:#e6e9e5"></model-viewer>
+        <p style="font-size:.9rem;color:white">Drag to rotate · Pinch or scroll to zoom</p>
         <div><p class="eyebrow">Project snapshot</p><p><strong>700 × 340 × 300 mm</strong><br>Two-wheel rolling cargo trailer · 3D-printable exterior · modular scooter connection</p></div>
       </div>
     </section>
