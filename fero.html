@@ -7,8 +7,9 @@
   <title>Ferō — Rolling Cargo Trailer | Halimah Alossaimi</title>
   <link rel="stylesheet" href="styles.css?v=fero-1">
 <style>
-.fero-page .fero-hero{display:grid;grid-template-columns:1fr 1fr;gap:1rem 4vw;align-items:center;min-height:0;padding-block:clamp(3rem,6vw,6rem)}
+.fero-page .fero-hero{display:grid;grid-template-columns:minmax(0,1fr);gap:1.5rem;align-items:center;min-height:0;padding-block:clamp(3rem,6vw,6rem)}
 .fero-hero>.eyebrow,.fero-hero>h1,.fero-page .fero-lead{grid-column:1;margin:0;text-align:left}.fero-page .fero-hero h1{font-size:clamp(5rem,11vw,10rem);text-transform:none}.fero-page .fero-hero-card{grid-column:2;grid-row:1/4;margin:0;width:100%;box-sizing:border-box}.fero-page .fero-section h2{font-size:clamp(2rem,4.5vw,4.5rem);text-transform:none;line-height:1.04;max-width:22ch}.fero-page .fero-section p:not(.eyebrow){max-width:62ch;line-height:1.5}
+.fero-page .fero-lead{max-width:48ch}
 @media(max-width:760px){.fero-page .fero-hero{display:flex;flex-direction:column;align-items:stretch}.fero-page .fero-hero-card{margin-top:1rem}}
 
 /* Keep the numbered rail outside the reading column, including in full-width bands. */
@@ -22,7 +23,7 @@
 .fero-page .fero-reflection-text{margin:0;font-size:clamp(1.1rem,1.6vw,1.45rem)}
 .fero-page .fero-hero-card{grid-template-columns:1fr;gap:1rem;padding:clamp(1rem,2vw,2rem)}
 @media(max-width:780px){.fero-page .fero-section>.shell{display:block}.fero-page .fero-section h2{max-width:100%}}
-</style><script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@4.1.0/dist/model-viewer.min.js"></script>
+</style>
 </head>
 <body class="fero-page">
   <header class="site-header">
@@ -41,11 +42,7 @@
       <p class="eyebrow">Industrial design · Product development · 2026</p>
       <h1>Ferō</h1>
       <p class="fero-lead">I designed Ferō to make it easier for students to carry more on their daily scooter commute. The two-wheel trailer carries books, a laptop, and other gear behind the scooter. When the ride ends, students can detach it and roll everything inside.</p>
-      <div class="fero-hero-card">
-        <model-viewer id="fero-3d" src="assets/fero-final.glb" alt="Ferō scooter cargo trailer in its closed riding configuration" camera-controls touch-action="pan-y" shadow-intensity="0.7" camera-orbit="35deg 70deg auto" style="display:block;width:100%;height:clamp(250px,32vw,440px);background:#e6e9e5"></model-viewer>
-        <p style="font-size:.9rem;color:white">Drag to rotate · Pinch or scroll to zoom</p>
-        <div><p class="eyebrow">Project snapshot</p><p><strong>700 × 340 × 300 mm</strong><br>Two-wheel rolling cargo trailer · 3D-printable exterior · modular scooter connection</p></div>
-      </div>
+
     </section>
 
     <nav class="fero-index shell" aria-label="Ferō process sections">
