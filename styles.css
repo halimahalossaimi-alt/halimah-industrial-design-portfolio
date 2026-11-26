@@ -927,7 +927,7 @@ figcaption { color: var(--muted); font-family:"Courier New",monospace; text-tran
 }
 
 
-.about-headshot { width: min(100%, 360px); aspect-ratio: 4 / 5; object-fit: cover; object-position: center top; border-radius: 28px; margin: 0 0 28px; box-shadow: 14px 14px 0 #D8B85A; }
+.about-headshot { width: min(100%, 360px); aspect-ratio: 4 / 5; object-fit: cover; object-position: center top; border-radius: 28px; margin: 0 0 28px; box-shadow: 14px 14px 0 #d4ff4f; }
 @media (max-width: 780px) {
   .about-headshot { width: min(100%, 300px); }
 }
