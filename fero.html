@@ -26,6 +26,62 @@
 
 .fero-hero-model{grid-column:2;grid-row:1/4;display:block;width:100%;height:clamp(340px,43vw,600px);background:transparent;--poster-color:transparent}
 @media(max-width:760px){.fero-hero-model{height:360px;margin-top:1rem}}
+
+/* Ferō palette: product teal, graphite, and clear neutral surfaces. */
+.fero-page {
+  --ink:#182324; --muted:#4b5d5e; --paper:#f7f9f8; --panel:#e6eeec;
+  --line:#c6d3cf; --yellow:#d7ff4a;
+  --fero-teal:#3e6f70; --fero-graphite:#202c2d;
+  --fero-light:#e6eeec; --fero-accent:#d7ff4a;
+  background:#f7f9f8; color:var(--ink);
+}
+.fero-page .site-header { border-color:var(--line); }
+.fero-page .site-header nav a { background:transparent; color:#4b5d5e; }
+.fero-page .site-header nav a:hover,
+.fero-page .site-header nav a[aria-current="page"] { color:#275859; border-color:#3e6f70; }
+.fero-page .eyebrow,.fero-page .fero-number { color:#315f60; }
+.fero-page h1,.fero-page h2,.fero-page h3 { color:inherit; }
+.fero-page .fero-lead { color:#34494a; }
+.fero-page .fero-index { background:rgba(247,249,248,.97); border-color:#b8cac4; }
+.fero-page .fero-index a { color:#34494a; border-color:#c6d3cf; }
+.fero-page .fero-index a:hover { background:#e2edE9; color:#182324; }
+.fero-page .fero-two p,.fero-page .fero-list li { color:#4b5d5e; }
+.fero-page .fero-list,.fero-page .fero-list li { border-color:#c6d3cf; }
+.fero-page .fero-list b { color:#243e3f; }
+.fero-page figcaption { color:#4b5d5e; }
+.fero-page :is(.fero-mode-grid,.fero-process,.fero-system-grid) {
+  background:#c6d3cf; border:1px solid #c6d3cf;
+}
+.fero-page :is(.fero-mode-grid,.fero-process,.fero-system-grid) article { background:#fff; color:#182324; }
+.fero-page :is(.fero-mode-grid,.fero-process,.fero-system-grid) article:nth-child(2n) { background:#edf3f0; }
+.fero-page :is(.fero-mode-grid,.fero-process) article:nth-child(3) { background:#e0ece8; }
+.fero-page :is(.fero-mode-grid,.fero-process,.fero-system-grid) p { color:#435858; }
+.fero-page :is(.fero-mode-grid,.fero-process) span { color:#315f60; }
+.fero-page .fero-paper { background:#e9f0ed; }
+.fero-page .fero-process article.is-selected { background:#315f60; color:#fff; }
+.fero-page .fero-process article.is-selected p { color:#f0f6f3; }
+.fero-page .fero-process article.is-selected span { color:#d7ff4a; }
+.fero-page .fero-specs,.fero-page .fero-specs div,.fero-page .fero-development-note { border-color:#b8cac4; }
+.fero-page .fero-specs b { color:#315f60; }
+.fero-page .fero-development-note p { color:#435858; }
+.fero-page .fero-dark { background:#202c2d; color:#f7faf8; }
+.fero-page .fero-dark .eyebrow,.fero-page .fero-dark .fero-number { color:#d7ff4a; }
+.fero-page .fero-insight-grid { background:#526564; border:1px solid #526564; }
+.fero-page .fero-insight-grid article:nth-child(n) { background:#2c3e3f; color:#f7faf8; }
+.fero-page .fero-insight-grid article:nth-child(2) { background:#344b4c; }
+.fero-page .fero-insight-grid span { color:#d7ff4a; }
+.fero-page .fero-insight-grid p,.fero-page .fero-reflection-text { color:#deE8e3; }
+.fero-page #colors figure { background:#fff; border:1px solid #d9e3de; }
+.fero-page #colors figcaption { padding:20px 24px; margin-top:0 !important; border-top:1px solid #e4ebe7; }
+.fero-page #colors figcaption span { display:inline-flex; align-items:center; gap:10px; color:#34494a; }
+.fero-page #colors figcaption span::before { content:""; width:18px; height:18px; border-radius:50%; background:#3e6f70; }
+.fero-page #colors figcaption span:nth-child(2)::before { background:#89515f; }
+.fero-page #colors figcaption span:nth-child(3)::before { background:#6c7c63; }
+.fero-page .site-footer { border-color:#c6d3cf; color:#4b5d5e; }
+.fero-page a:focus-visible { outline:3px solid #3e6f70; outline-offset:4px; }
+.fero-page .fero-dark a:focus-visible { outline-color:#d7ff4a; }
+.fero-page ::selection { background:#d7ff4a; color:#182324; }
+
 </style><script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@4.1.0/dist/model-viewer.min.js"></script>
 </head>
 <body class="fero-page">
