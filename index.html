@@ -6,8 +6,19 @@
   <meta name="description" content="Industrial design portfolio by Halimah Alossaimi.">
   <title>Halimah Alossaimi — Industrial Design Portfolio</title>
   <link rel="stylesheet" href="styles.css?v=clean-hero">
+<style>
+.portrait-home .hero { min-height: min(800px, 88vh); padding-block: 110px 70px; }
+.portrait-home .hero h1 { position:relative; z-index:3; max-width:54%; font-size:clamp(3.5rem,7.5vw,7rem); }
+.portrait-home .particle-sphere { width:52%; max-width:680px; left:auto; right:0; top:50%; translate:0 -50%; filter:none; cursor:default; touch-action:pan-y; }
+.portrait-home .particle-sphere canvas { touch-action:pan-y; }
+@media(max-width:780px) {
+  .portrait-home .hero { min-height:0; padding-block:110px 24px; gap:28px; }
+  .portrait-home .hero h1 { max-width:100%; font-size:clamp(3rem,13vw,5rem); }
+  .portrait-home .particle-sphere { position:relative; order:3; width:100%; max-width:460px; align-self:center; left:auto; right:auto; top:auto; translate:none; opacity:1; }
+}
+</style>
 </head>
-<body>
+<body class="portrait-home">
   <header class="site-header">
     <a class="wordmark" href="index.html">Halimah Alossaimi</a>
     <nav aria-label="Primary navigation">
@@ -139,7 +150,7 @@
     <p>Industrial Designer</p>
     <a href="#top">Back to top ↑</a>
   </footer>
-  <script src="particle-sphere.js?v=2"></script>
+  <script src="particle-sphere.js?v=portrait-1"></script>
   <script src="site-motion.js"></script>
   <script src="education-timeline.js?v=1"></script>
 </body>
