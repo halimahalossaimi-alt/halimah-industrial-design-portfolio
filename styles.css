@@ -573,20 +573,7 @@ h1,h2,h3 { font-family: Arial, "Helvetica Neue", sans-serif; letter-spacing: -.0
   transform: rotate(-7deg);
   transition: translate .8s cubic-bezier(.2,.8,.2,1);
 }
-.hero::after {
-  content: "DESIGN  •  INTERACTION  •  EXPERIMENT";
-  position: absolute;
-  z-index: -2;
-  left: 50%;
-  top: 50%;
-  translate: -50% -50%;
-  width: 100%;
-  color: rgba(16,18,15,.17);
-  font: 700 clamp(.9rem,1.5vw,1.25rem)/1 "Courier New",monospace;
-  letter-spacing: .55em;
-  text-align: center;
-  white-space: nowrap;
-}
+
 .hero h1 {
   position: relative;
   z-index: 2;
@@ -933,17 +920,7 @@ figcaption { color: var(--muted); font-family:"Courier New",monospace; text-tran
 }
 
 
-/* Blush illustration behind the interactive sphere */
-.particle-sphere::before {
-  content: "";
-  position: absolute;
-  inset: 9%;
-  z-index: 0;
-  pointer-events: none;
-  background: url("hero-illustration.png?v=profile-simple") center / contain no-repeat;
-  opacity: .34;
-  mix-blend-mode: multiply;
-}
+
 .particle-sphere canvas {
   position: relative;
   z-index: 1;
