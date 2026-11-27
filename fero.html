@@ -75,8 +75,8 @@
 .fero-page #colors figcaption { padding:20px 24px; margin-top:0 !important; border-top:1px solid #e4ebe7; }
 .fero-page #colors figcaption span { display:inline-flex; align-items:center; gap:10px; color:#34494a; }
 .fero-page #colors figcaption span::before { content:""; width:18px; height:18px; border-radius:50%; background:#3e6f70; }
-.fero-page #colors figcaption span:nth-child(2)::before { background:#89515f; }
-.fero-page #colors figcaption span:nth-child(3)::before { background:#6c7c63; }
+.fero-page #colors figcaption span:nth-child(2)::before { background:#733f46; }
+.fero-page #colors figcaption span:nth-child(3)::before { background:#4f5d4a; }
 .fero-page .site-footer { border-color:#c6d3cf; color:#4b5d5e; }
 .fero-page a:focus-visible { outline:3px solid #3e6f70; outline-offset:4px; }
 .fero-page .fero-dark a:focus-visible { outline-color:#d7ff4a; }
@@ -198,8 +198,8 @@
       <model-viewer id="fero-color-viewer" src="assets/fero-final.glb" loading="lazy" alt="Interactive Ferō color preview. Drag to rotate." camera-controls touch-action="pan-y" camera-orbit="35deg 70deg auto" shadow-intensity=".6"></model-viewer>
       <div class="fero-color-controls"><p class="eyebrow">Explore the finishes</p><div class="fero-swatches" role="group" aria-label="Product color">
         <button type="button" data-color="teal" aria-pressed="true"><i style="background:#3e6f70"></i>Teal</button>
-        <button type="button" data-color="burgundy" aria-pressed="false"><i style="background:#89515f"></i>Burgundy</button>
-        <button type="button" data-color="olive" aria-pressed="false"><i style="background:#6c7c63"></i>Olive</button>
+        <button type="button" data-color="burgundy" aria-pressed="false"><i style="background:#733f46"></i>Burgundy</button>
+        <button type="button" data-color="olive" aria-pressed="false"><i style="background:#4f5d4a"></i>Olive</button>
       </div><p id="fero-color-status" aria-live="polite">Teal shell · Graphite base</p><p class="fero-control-note">Choose a finish. Drag the model to see it from another angle.</p></div>
       </div>
       <figure style="grid-column:1/-1;margin:2rem 0 0;min-width:0">
@@ -244,7 +244,7 @@
   dialog.addEventListener('click', e => { if(e.target === dialog) { const r=dialog.getBoundingClientRect(); if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom) dialog.close(); } });
   document.querySelector('.fero-zoom').addEventListener('click', e => { if (dialog.showModal && !e.metaKey && !e.ctrlKey) { e.preventDefault(); dialog.showModal(); } });
   const viewer = document.querySelector('#fero-color-viewer');
-  const palette = { teal:[.243,.435,.439,1], burgundy:[.537,.318,.373,1], olive:[.424,.486,.388,1] };
+  const palette = {"teal":[0.04817182422688942,0.1589608350608804,0.162029375639111,1],"burgundy":[0.1714411007328226,0.04970656598412723,0.06124605423161761,1],"olive":[0.07818742180518633,0.10946171077829933,0.06847816984440017,1]};
   let selected = 'teal', shellMaterials = [];
   function applyColor() {
     shellMaterials.forEach(material => material.pbrMetallicRoughness.setBaseColorFactor(palette[selected]));
