@@ -7,16 +7,26 @@
   <title>Halimah Alossaimi — Industrial Design Portfolio</title>
   <link rel="stylesheet" href="styles.css?v=clean-hero">
 <style>
-.portrait-home .hero { min-height:clamp(700px,88svh,960px); padding-block:110px 70px; align-items:flex-end; text-align:left; overflow:visible; }
-.portrait-home .hero h1 { position:relative; z-index:3; width:49%; max-width:650px; font-size:clamp(3.5rem,7vw,7rem); }
-.portrait-home .hero > .eyebrow { left:auto; right:0; width:49%; text-align:left; }
-.portrait-home .particle-sphere { position:absolute; width:min(67vw,900px); max-width:none; left:0; right:auto; top:50%; translate:0 -50%; opacity:1; filter:none; cursor:default; touch-action:pan-y; }
+.portrait-home .hero {
+  --hero-gutter:max(32px,calc((100% - var(--max))/2));
+  width:100%; max-width:none; margin:0;
+  min-height:max(700px,88svh,min(67vw,900px));
+  padding:80px var(--hero-gutter);
+  align-items:flex-end; text-align:left; overflow:hidden;
+  background:linear-gradient(rgba(62,111,112,.13),rgba(62,111,112,.13));
+  background-blend-mode:multiply;
+  border-bottom:1px solid rgba(16,18,15,.25);
+}
+.portrait-home .hero-title { position:relative; z-index:3; width:49%; max-width:650px; }
+.portrait-home .hero .hero-title .eyebrow { position:static; width:auto; margin:0 0 28px; text-align:left; }
+.portrait-home .hero h1 { position:relative; width:100%; max-width:none; font-size:clamp(3.5rem,7vw,7rem); }
+.portrait-home .particle-sphere { position:absolute; width:min(67vw,900px); max-width:none; left:var(--hero-gutter); right:auto; top:50%; translate:0 -50%; opacity:1; filter:none; cursor:default; touch-action:pan-y; }
 .portrait-home .particle-sphere canvas { touch-action:pan-y; }
 @media(max-width:780px) {
-  .portrait-home .hero { min-height:0; padding-block:100px 35px; align-items:stretch; gap:28px; overflow:hidden; }
-  .portrait-home .hero h1 { order:2; width:100%; max-width:100%; font-size:clamp(3rem,13vw,6rem); }
-  .portrait-home .hero > .eyebrow { right:auto; left:0; width:100%; }
-  .portrait-home .particle-sphere { position:relative; order:1; width:min(115%,680px); flex-shrink:0; align-self:center; left:auto; right:auto; top:auto; translate:none; opacity:1; }
+  .portrait-home .hero { --hero-gutter:18px; min-height:0; padding-block:35px 55px; align-items:stretch; gap:28px; }
+  .portrait-home .hero-title { order:2; width:100%; max-width:100%; }
+  .portrait-home .hero h1 { font-size:clamp(3rem,13vw,6rem); }
+  .portrait-home .particle-sphere { position:relative; order:1; width:min(100%,680px); flex-shrink:0; align-self:center; left:auto; right:auto; top:auto; translate:none; }
 }
 </style>
 </head>
@@ -37,8 +47,10 @@
       <div class="particle-sphere" aria-hidden="true">
         <canvas id="hero-particle-sphere"></canvas>
       </div>
-      <p class="eyebrow">Industrial Design · ASU · 2026</p>
-      <h1>Industrial Design Portfolio.</h1>
+      <div class="hero-title">
+        <p class="eyebrow">Industrial Design · ASU · 2026</p>
+        <h1>Industrial Design Portfolio.</h1>
+      </div>
         </section>
 
     
