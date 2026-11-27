@@ -29,6 +29,16 @@
   .portrait-home .hero h1 { font-size:clamp(3rem,13vw,6rem); }
   .portrait-home .particle-sphere { position:relative; order:1; width:min(100%,680px); flex-shrink:0; align-self:center; left:auto; right:auto; top:auto; bottom:auto; translate:none; }
 }
+
+.portrait-home .contact-section { width:100%; max-width:none; margin:0; padding:clamp(64px,8vw,110px) max(32px,calc((100% - var(--max))/2)); background:#202c2d; color:#f3f6ef; }
+.portrait-home .contact-card { padding:0; background:transparent; border:0; gap:clamp(32px,6vw,90px); }
+.portrait-home .contact-card .eyebrow { color:#d4ff4f; }
+.portrait-home .contact-card h2 { color:#f3f6ef; }
+.portrait-home .contact-card p:not(.eyebrow) { color:#d3ded7; max-width:48ch; }
+.portrait-home .contact-details a { color:#f3f6ef; border-color:#63716c; padding-block:12px; }
+.portrait-home .contact-details a:hover,.portrait-home .contact-details a:focus-visible { color:#d4ff4f; border-color:#d4ff4f; }
+.portrait-home .site-footer { margin-top:0; }
+@media(max-width:780px) { .portrait-home .contact-section { padding-inline:18px; } }
 </style>
 </head>
 <body class="portrait-home">
@@ -83,20 +93,7 @@
     </section>
 
 
-    <section id="contact" class="contact-section shell" aria-labelledby="contact-title">
-      <div class="contact-card">
-        <div>
-          <p class="eyebrow">Let’s connect</p>
-          <h2 id="contact-title">Have a project in mind?</h2>
-          <p>I’m open to thoughtful collaborations, internships, and conversations about designing useful things for real life.</p>
-        </div>
-        <div class="contact-details">
-          <a href="mailto:Halimah@lossaimi.net">Halimah@lossaimi.net</a>
-          <a href="tel:+16513479854">651-347-9854</a>
-          <a href="https://www.linkedin.com/in/halimahalossaimi" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-        </div>
-      </div>
-    </section>
+
 
     <section id="education" class="education-section shell" aria-labelledby="education-title">
       <div class="section-heading">
@@ -157,6 +154,20 @@
             <p>Life-centered design, design research, CAD, prototyping, and testing.</p>
           </div>
         </article>
+      </div>
+    </section>
+    <section id="contact" class="contact-section shell" aria-labelledby="contact-title">
+      <div class="contact-card">
+        <div>
+          <p class="eyebrow">Let’s connect</p>
+          <h2 id="contact-title">Let’s talk design.</h2>
+          <p>I’m looking for industrial design internships and opportunities to collaborate. Get in touch to talk about my work or a potential project.</p>
+        </div>
+        <div class="contact-details">
+          <a href="mailto:Halimah@lossaimi.net">Halimah@lossaimi.net</a>
+          <a href="tel:+16513479854">651-347-9854</a>
+          <a href="https://www.linkedin.com/in/halimahalossaimi" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        </div>
       </div>
     </section>
   </main>
